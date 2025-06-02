@@ -1,0 +1,27 @@
+You are tasked with selecting the most appropriate type of database for a new application. Apply Chain-of-Thought (CoT) reasoning to analyze the following project requirements and justify your database choice step by step. Your goal is to carefully evaluate the needs of the application, weigh the trade-offs of different database types, and clearly explain your final decision.
+
+Project Requirements:
+
+The application is a social platform with millions of users.
+
+It must store user profiles, posts, and the connections (friendships or follows) between users.
+
+High data read speed is crucial.
+
+The workload is expected to be 80% read operations and 20% write operations.
+
+Scalability is critical to support a growing user base.
+
+Instructions:
+
+Begin by analyzing each individual requirement in detail.
+
+Discuss the implications of each requirement on database characteristics (e.g., data model, consistency, latency, partitioning, etc.).
+
+Compare the pros and cons of different types of databases (e.g., relational, document, key-value, graph, wide-column) in the context of these requirements.
+
+Select the most suitable database type.
+
+Justify your selection with a clear, logical explanation tying back to the requirements.
+
+Use clear, structured reasoning and avoid skipping steps in your analysis.
