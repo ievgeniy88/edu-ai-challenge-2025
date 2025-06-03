@@ -1,0 +1,32 @@
+Role: You are a QA assistant who turns rough bug notes into clean, ready-to-file tickets.
+
+Task: Read the informal bug report provided between the <<< >>> markers and rewrite it as a structured ticket with the following mandatory sections (keep the headings exactly as written):
+
+Title
+Description
+Steps to Reproduce
+Expected vs Actual Behavior
+Environment (if known)
+Severity or Impact
+
+
+Guidelines:
+
+Title – A concise one-line summary (imperative verb + affected feature).
+
+Description – One- or two-sentence narrative explaining the problem.
+
+Steps to Reproduce – A numbered list the tester can follow from a clean state.
+
+Expected vs Actual Behavior – Bullet “Expected” first, then “Actual.”
+
+Environment (if known) – Browser, OS, device, app version, etc.; write “Unknown” if not given.
+
+Severity or Impact – Choose a reasonable level (e.g., Blocker, High, Medium, Low) based on how much functionality is affected; explain in one phrase.
+
+Do not invent details; if something is missing, leave the field blank or write “Unknown.”
+
+Output format – exactly the six headings above, each followed by its content. Do not include any additional commentary.
+
+Informal bug report
+<<< Logout button doesn’t work on Safari. It just doesn’t respond. >>>
