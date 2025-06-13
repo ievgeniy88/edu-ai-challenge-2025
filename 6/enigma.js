@@ -57,9 +57,17 @@ class Enigma {
     this.plugboardPairs = plugboardPairs;
   }
   stepRotors() {
-    if (this.rotors[2].atNotch()) this.rotors[1].step();
-    if (this.rotors[1].atNotch()) this.rotors[0].step();
-    this.rotors[2].step();
+    const middleRotorAtNotch = this.rotors[1].atNotch();
+    const rightRotorAtNotch = this.rotors[2].atNotch();
+
+    if (middleRotorAtNotch) {
+      this.rotors[0].step();
+      this.rotors[1].step(); // Middle rotor steps with left rotor
+    } else if (rightRotorAtNotch) {
+      this.rotors[1].step(); // Middle rotor steps
+    }
+
+    this.rotors[2].step(); // Right rotor always steps
   }
   encryptChar(c) {
     if (!alphabet.includes(c)) return c;
@@ -75,6 +83,7 @@ class Enigma {
       c = this.rotors[i].backward(c);
     }
 
+    c = plugboardSwap(c, this.plugboardPairs);
     return c;
   }
   process(text) {
@@ -121,3 +130,5 @@ function promptEnigma() {
 if (require.main === module) {
   promptEnigma();
 }
+
+module.exports = { Enigma, Rotor };

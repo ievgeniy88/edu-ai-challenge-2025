@@ -1,0 +1,12 @@
+{
+  "name": "enigma-machine",
+  "version": "1.0.0",
+  "description": "Enigma Machine Implementation",
+  "main": "enigma.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+} 

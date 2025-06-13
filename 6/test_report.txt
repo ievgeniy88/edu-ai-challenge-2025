@@ -1,0 +1,21 @@
+ PASS  ./enigma.test.js
+  Rotor
+    √ should step correctly (6 ms)
+  Enigma Machine
+    √ should encrypt a single character correctly (1 ms)
+    √ should encrypt a full message correctly (1 ms)
+    √ should handle plugboard swaps (1 ms)
+    √ should handle rotor stepping correctly (double step) (1 ms)
+    √ should pass through non-alphabetic characters
+
+-----------|---------|----------|---------|---------|-------------------
+File       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-----------|---------|----------|---------|---------|-------------------
+All files  |   77.77 |    81.25 |   68.42 |   75.86 |
+ enigma.js |   77.77 |    81.25 |   68.42 |   75.86 | 99-123,131
+-----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        1.009 s
+Ran all test suites.
